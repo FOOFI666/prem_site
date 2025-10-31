@@ -953,11 +953,18 @@ a:hover {
     gap: 16px;
     font-weight: 600;
     color: var(--text-dark);
+    align-items: center;
 }
 
 .schedule-day li span {
     color: var(--text-muted);
     font-weight: 500;
+    flex: 1;
+}
+
+.schedule-day li strong {
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .schedule-day__note {

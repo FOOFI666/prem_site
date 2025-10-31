@@ -1195,6 +1195,29 @@ a:hover {
     margin-right: 6px;
 }
 
+.contacts__social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    transition: color 0.3s ease;
+}
+
+.contacts__social-link:hover,
+.contacts__social-link:focus-visible {
+    color: var(--accent-dark);
+}
+
+.contacts__card .contacts__note {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin: 12px 0 0;
+}
+
 .contacts__actions {
     margin-top: 28px;
 }

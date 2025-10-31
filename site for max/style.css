@@ -524,10 +524,17 @@ a:hover {
     flex-direction: column;
 }
 
+.coach-card__media {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+}
+
 .coach-card__media img {
     width: 100%;
-    height: 350px;
+    height: 100%;
     object-fit: cover;
+    transform: scale(1.02);
 }
 
 .coach-card__content {
@@ -1203,7 +1210,8 @@ a:hover {
     font-weight: 600;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+    text-underline-offset: 6px;
+    text-decoration-color: currentColor;
     transition: color 0.3s ease;
 }
 
@@ -1512,6 +1520,10 @@ a:hover {
 
     .cta-btn {
         padding: 12px 22px;
+    }
+
+    .coach-card__media {
+        aspect-ratio: 3 / 4;
     }
 
     .section {

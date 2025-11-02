@@ -1627,6 +1627,37 @@ a:hover {
 
     .carousel {
         --carousel-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .carousel__viewport {
+        grid-column: 1 / -1;
+        padding: 16px 20px 32px;
+    }
+
+    .carousel__control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 42px;
+        height: 42px;
+    }
+
+    .carousel__control--prev {
+        left: 12px;
+    }
+
+    .carousel__control--next {
+        right: 12px;
+    }
+
+    .carousel__dots {
+        margin-top: 10px;
+    }
+
+    .testimonials__carousel,
+    .news__carousel {
+        --carousel-item-width: min(420px, 92vw);
     }
 }
 
@@ -1684,9 +1715,23 @@ a:hover {
         --carousel-gap: 16px;
     }
 
+    .carousel__viewport {
+        padding: 14px 16px 28px;
+    }
+
     .carousel__control {
         width: 38px;
         height: 38px;
+    }
+
+    .testimonials__carousel,
+    .news__carousel {
+        --carousel-item-width: min(420px, 96vw);
+    }
+
+    .testimonial-card,
+    .news-card {
+        padding: 24px;
     }
 
     .achievements__slide {

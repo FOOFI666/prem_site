@@ -72,7 +72,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const clampIndex = index => Math.max(0, Math.min(index, slides.length - 1));
 
         const updatePositions = () => {
-            slidePositions = slides.map(slide => Math.round(slide.offsetLeft));
+            const trackWidth = track.clientWidth;
+            const maxScroll = Math.max(track.scrollWidth - trackWidth, 0);
+
+            slidePositions = slides.map(slide => {
+                const slideWidth = slide.clientWidth;
+                const centered = slide.offsetLeft - (trackWidth - slideWidth) / 2;
+                return Math.max(0, Math.min(Math.round(centered), maxScroll));
+            });
             updateActiveSlide();
         };
 

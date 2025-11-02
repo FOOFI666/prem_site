@@ -55,7 +55,7 @@ a:hover {
 }
 
 .section {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .section__heading {
@@ -761,6 +761,17 @@ a:hover {
     margin-top: 24px;
 }
 
+.achievements__description ul {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.achievements__description li {
+    color: rgba(255, 255, 255, 0.86);
+}
+
 .achievements__description p {
     color: rgba(255, 255, 255, 0.78);
 }
@@ -1212,19 +1223,29 @@ a:hover {
 .contacts__social-link {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    color: var(--accent);
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 6px;
-    text-decoration-color: currentColor;
-    transition: color 0.3s ease;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(216, 31, 42, 0.12);
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-right: 12px;
+}
+
+.contacts__social-link:last-of-type {
+    margin-right: 0;
 }
 
 .contacts__social-link:hover,
 .contacts__social-link:focus-visible {
-    color: var(--accent-dark);
+    background: rgba(216, 31, 42, 0.2);
+    transform: translateY(-2px);
+}
+
+.contacts__social-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
 }
 
 .contacts__card .contacts__note {
@@ -1530,7 +1551,7 @@ a:hover {
     }
 
     .section {
-        padding: 90px 0;
+        padding: 72px 0;
     }
 
     .hero {

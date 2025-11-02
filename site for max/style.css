@@ -1863,7 +1863,7 @@ a:hover {
     filter: none;
 }
 
-/* .social-fab__link--telegram {
+.social-fab__link--telegram {
     background: linear-gradient(135deg, #2aabee 0%, #229ed9 100%);
 }
 
@@ -1873,7 +1873,11 @@ a:hover {
 
 .social-fab__link--vk {
     background: linear-gradient(135deg, #2787f5 0%, #134d9a 100%);
-} */
+}
+
+.social-fab__link--instagram {
+    background: linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%);
+}
 
 @keyframes social-fab-pulse {
     0% {

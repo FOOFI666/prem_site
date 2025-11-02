@@ -861,6 +861,19 @@ a:hover {
     gap: 28px;
 }
 
+.news__carousel {
+    --carousel-item-width: min(360px, 86vw);
+    margin-top: 40px;
+}
+
+.news__carousel .carousel__viewport {
+    padding: 16px 0 32px;
+}
+
+.news__carousel .carousel__control {
+    top: 44%;
+}
+
 .news-card {
     background: var(--surface);
     border-radius: var(--radius-lg);

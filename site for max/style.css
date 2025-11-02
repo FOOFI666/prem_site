@@ -1562,6 +1562,14 @@ a:hover {
         text-align: justify;
     }
 
+    .about__content p,
+    .programs .section__heading p,
+    .program-card__content p,
+    .achievements__description p,
+    .achievements__description li {
+        text-align: justify;
+    }
+
     .hero__actions {
         flex-direction: column;
         align-items: flex-start;

@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             start: "top 80%",
             end: "bottom bottom",  /* Добавлено: триггер заканчивается позже, без отката при скролле вниз */
             toggleActions: "play none none none",  /* Без reverse */
-            once: true  /* Только раз, остаётся видимым навсегда */
+            once: true  /* Только раз, остается видимым навсегда */
         }
     });
 

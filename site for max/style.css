@@ -749,6 +749,10 @@ a:hover {
     color: var(--text-light);
 }
 
+.achievements .section__subtitle {
+    color: var(--text-light);
+}
+
 .achievements__container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

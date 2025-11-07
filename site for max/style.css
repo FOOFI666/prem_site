@@ -1004,6 +1004,8 @@ b {
 .schedule-day li strong {
     white-space: nowrap;
     flex-shrink: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
 }
 
 .schedule-day__note {
@@ -1129,6 +1131,8 @@ b {
 .pricing-card li strong {
     color: var(--accent);
     white-space: nowrap;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
 }
 
 /* Signup */

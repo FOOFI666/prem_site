@@ -156,6 +156,7 @@ a:hover {
     letter-spacing: 0.06em;
     position: relative;
     padding: 4px 0;
+    white-space: nowrap;
 }
 
 .site-nav__list a::after {

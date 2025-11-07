@@ -73,6 +73,12 @@ a:hover {
     margin-bottom: 16px;
 }
 
+strong,
+b {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
 .section__subtitle {
     font-size: 18px;
     color: var(--text-muted);
@@ -475,6 +481,7 @@ a:hover {
 }
 
 .program-card__content h3 {
+    font-family: 'Playfair Display', serif;
     font-size: 22px;
     font-weight: 700;
     color: var(--bg-dark);
@@ -744,6 +751,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: 28px;
+    margin: 0 0 32px;
 }
 
 .achievements .section__title {
@@ -752,6 +760,8 @@ a:hover {
 
 .achievements .section__subtitle {
     color: var(--text-light);
+    align-self: flex-start;
+    text-align: left;
 }
 
 .achievements__container {
@@ -995,6 +1005,8 @@ a:hover {
 .schedule-day li strong {
     white-space: nowrap;
     flex-shrink: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
 }
 
 .schedule-day__note {
@@ -1055,6 +1067,7 @@ a:hover {
     color: var(--text-muted);
     line-height: 1.7;
     border-top: 1px solid rgba(18, 21, 32, 0.08);
+    text-align: justify;
 }
 
 .faq-item__question:focus-visible {
@@ -1119,6 +1132,8 @@ a:hover {
 .pricing-card li strong {
     color: var(--accent);
     white-space: nowrap;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
 }
 
 /* Signup */
@@ -1666,8 +1681,8 @@ a:hover {
     }
 
     .brand__logo {
-        width: 48px;
-        height: 48px;
+        width: 64px;
+        height: 64px;
     }
 
     .brand__name {

@@ -653,27 +653,30 @@
         <div class="container contacts__grid">
             <div class="contacts__card">
                 <h2 class="section__title">Контакты</h2>
-                <p>Заходите к нам в гости — мы всего в 10 минутах от метро «Марьино»! А чтобы узнать нас лучше, подписывайтесь на наши соц-ые сети: там жизнь клуба в прямом эфире.</p>
+                <p>Заходите к нам в гости — мы всего в 10 минутах от метро «Марьино»! А чтобы узнать нас лучше, подписывайтесь на наши социальные сети: там жизнь клуба в прямом эфире.</p>
                 <ul class="contacts__list">
                     <li><span>Адрес:</span> г. Москва, ул. Новочеркасский бульвар, д.13</li>
                     <li><span>Телефон:</span> <a href="tel:+79690693266">+7 (969) 069-32-66</a></li>
-                    <li><span>Соц-ые сети:</span>
-                        <a class="contacts__social-link" href="https://vk.com" target="_blank" rel="noopener">
-                            <img src="images/VK.com-logo.svg" alt="" class="contacts__social-icon" aria-hidden="true">
-                            <span class="sr-only">ВКонтакте</span>
-                        </a>
-                        <a class="contacts__social-link" href="https://t.me/Sempai_Ivanov" target="_blank" rel="noopener">
-                            <img src="images/Telegram_logo.svg" alt="" class="contacts__social-icon" aria-hidden="true">
-                            <span class="sr-only">Telegram</span>
-                        </a>
-                        <a class="contacts__social-link" href="https://wa.me/79690693266" target="_blank" rel="noopener">
-                            <img src="images/WhatsApp.svg" alt="" class="contacts__social-icon" aria-hidden="true">
-                            <span class="sr-only">WhatsApp</span>
-                        </a>
-                        <a class="contacts__social-link" href="https://www.instagram.com" target="_blank" rel="noopener">
-                            <img src="images/instagram.svg" alt="" class="contacts__social-icon" aria-hidden="true">
-                            <span class="sr-only">Instagram*</span>
-                        </a>
+                    <li class="contacts__socials-item">
+                        <span>Социальные сети:</span>
+                        <div class="contacts__socials">
+                            <a class="contacts__social-link" href="https://vk.com" target="_blank" rel="noopener">
+                                <img src="images/VK.com-logo.svg" alt="" class="contacts__social-icon" aria-hidden="true">
+                                <span class="sr-only">ВКонтакте</span>
+                            </a>
+                            <a class="contacts__social-link" href="https://t.me/Sempai_Ivanov" target="_blank" rel="noopener">
+                                <img src="images/Telegram_logo.svg" alt="" class="contacts__social-icon" aria-hidden="true">
+                                <span class="sr-only">Telegram</span>
+                            </a>
+                            <a class="contacts__social-link" href="https://wa.me/79690693266" target="_blank" rel="noopener">
+                                <img src="images/WhatsApp.svg" alt="" class="contacts__social-icon" aria-hidden="true">
+                                <span class="sr-only">WhatsApp</span>
+                            </a>
+                            <a class="contacts__social-link" href="https://www.instagram.com" target="_blank" rel="noopener">
+                                <img src="images/instagram.svg" alt="" class="contacts__social-icon" aria-hidden="true">
+                                <span class="sr-only">Instagram*</span>
+                            </a>
+                        </div>
                     </li>
                 </ul>
                 <p class="contacts__note">*Instagram — запрещенная в РФ соцсеть компании Meta</p>
@@ -757,7 +760,10 @@
 
 <div class="social-fab" data-social-fab>
     <button class="social-fab__toggle" type="button" aria-expanded="false" aria-controls="social-fab-menu">
-        <span class="sr-only">Открыть контакты в мессенджерах</span>
+        <span class="sr-only">Открыть контакты для звонка</span>
+        <svg class="social-fab__toggle-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l1.82-1.82a1 1 0 011.01-.24 11.36 11.36 0 003.55.57 1 1 0 011 1v2.88a1 1 0 01-.91 1A17.93 17.93 0 012 6.91 1 1 0 013 6h2.88a1 1 0 011 1 11.36 11.36 0 00.57 3.55 1 1 0 01-.24 1.01l-1.59 1.59z"/>
+        </svg>
     </button>
     <ul class="social-fab__list" id="social-fab-menu" role="menu">
         <li role="none">

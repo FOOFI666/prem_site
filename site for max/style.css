@@ -73,6 +73,12 @@ a:hover {
     margin-bottom: 16px;
 }
 
+strong,
+b {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
 .section__subtitle {
     font-size: 18px;
     color: var(--text-muted);
@@ -742,8 +748,10 @@ a:hover {
 .achievements .section__heading {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
     gap: 28px;
+    margin: 0 0 32px;
 }
 
 .achievements .section__title {
@@ -1055,6 +1063,7 @@ a:hover {
     color: var(--text-muted);
     line-height: 1.7;
     border-top: 1px solid rgba(18, 21, 32, 0.08);
+    text-align: justify;
 }
 
 .faq-item__question:focus-visible {
@@ -1666,8 +1675,8 @@ a:hover {
     }
 
     .brand__logo {
-        width: 48px;
-        height: 48px;
+        width: 64px;
+        height: 64px;
     }
 
     .brand__name {

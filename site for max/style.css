@@ -150,8 +150,18 @@ b {
 .site-nav__list {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 22px;
     list-style: none;
+}
+
+.site-nav__row-break {
+    flex-basis: 100%;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
 }
 
 .site-nav__list a {
@@ -1524,6 +1534,7 @@ b {
         right: 16px;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: flex-start;
         gap: 20px;
         padding: 24px;
         background: rgba(8, 12, 19, 0.96);
@@ -1534,6 +1545,10 @@ b {
         pointer-events: none;
         transform: translateY(-12px);
         transition: var(--transition);
+    }
+
+    .site-nav__row-break {
+        display: none;
     }
 
     .site-nav__list.is-open {
